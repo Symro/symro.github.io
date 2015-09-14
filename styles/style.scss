@@ -1,0 +1,594 @@
+//colors
+$white_90: rgba(255,255,255,.9);
+$color_tuna_approx: #2d3141;
+$white: #fff;
+$color_buttercup_approx: #f3ac14;
+$color_charade_approx: #292b39;
+$black_40: rgba(0, 0, 0, .4);
+$black_60: rgba(0,0,0,.6);
+$color_log_cabin_approx: #222;
+$color_tamarillo_80_approx: rgba(143,27,15,0.8);
+$color_cinnabar_approx: #e74c3c;
+$color_catskill_white_approx: #eff7f7;
+$color_flamingo_approx: #ed5534;
+$black: #000;
+
+//fonts
+$font_0: 'Montserrat';
+$font_1: sans-serif;
+$font_2: 'Montserrat', sans-serif;
+
+//urls
+$url_0: url(../img/back.jpg);
+$url_1: url(../img/about.jpg);
+$url_2: url(../img/skills.png);
+$url_3: url(../img/twiby.jpg);
+$url_4: url(../img/theplacetoubib.jpg);
+$url_5: url(../img/augustinportfolio.jpg);
+$url_6: url(../img/parislack.jpg);
+$url_7: url(../img/bubble.jpg);
+$url_8: url(../img/parismetro.jpg);
+
+//@extend-elements
+//original selectors
+//#modal-1 article, #modal-4 article
+%extend_1 {
+	float: left;
+	width: 500px;
+	text-align: justify;
+}
+
+
+html {
+	font-size: 85%;
+}
+h1 {
+	font-family: $font_0, $font_1;
+	font-size: 2.7rem;
+	margin-top: 0;
+	font-family: $font_2;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+h4 {
+	margin-bottom: 1.05rem;
+}
+p {
+	font-family: $font_0;
+}
+hr {
+	width: 1em;
+	height: 0.2em;
+	border: none;
+	background-color: $white_90;
+}
+h3 {
+	font-family: $font_2;
+	text-transform: uppercase;
+	font-size: 2.7rem;
+	margin-top: 0;
+}
+main {
+	width: inherit;
+	height: inherit;
+	> {
+		section {
+			&:first-child {
+				height: 955px;
+				width: 100%;
+				margin: 0 auto;
+				position: relative;
+				top: 0;
+				left: 0;
+				background-color: $color_tuna_approx;
+				background: $url_0 no-repeat center fixed;
+				background-size: cover;
+				p {
+					margin-top: 20%;
+				}
+				> div {
+					position: relative;
+					text-align: center;
+					color: $white;
+					font-size: 1rem;
+					font-family: $font_0, $font_1;
+					width: 20rem;
+					margin: 0 auto;
+					top: 50%;
+					//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+					transform: translateY(-50%);
+				}
+			}
+			&:nth-child(3) {
+				height: 650px;
+				width: 100%;
+				background: $url_1 no-repeat center fixed;
+				background-size: cover;
+				> {
+					p {
+						width: 30%;
+						float: right;
+						position: relative;
+						font-size: 1.2rem;
+						color: $white;
+						right: 10%;
+						top: 0;
+						top: 50%;
+						//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+						transform: translateY(-50%);
+					}
+					div {
+						float: left;
+						width: 50%;
+						height: 100%;
+						background: $url_2 center no-repeat;
+					}
+				}
+			}
+			&:last-child {
+				h1 {
+					font-size: 1.6rem;
+					text-transform: uppercase;
+					font-weight: bold;
+					color: $color_charade_approx;
+				}
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					text-align: center;
+					li a {
+						display: inline-block;
+						float: left;
+						width: 40px;
+						height: 40px;
+						margin-right: 1rem;
+						text-align: center;
+						padding-top: 5px;
+						//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+						border-radius: 20px;
+						//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+						box-shadow: inset 0 0 0 3px $color_log_cabin_approx;
+						color: $color_log_cabin_approx;
+						//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: all 400ms ease-in-out;
+					}
+				}
+				span {
+					text-indent: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					display: block;
+				}
+				li {
+					margin-left: 1.5rem;
+					margin-left: 2rem;
+					a:hover {
+						//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+						box-shadow: inset 0 0 0 40px $color_log_cabin_approx;
+						color: $white;
+					}
+				}
+				section div {
+					width: 260px;
+					margin: 0 auto;
+					height: 50px;
+				}
+			}
+			&:nth-child(5) > div.active section {
+				background-color: $black_60;
+				opacity: 1;
+				//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: background-color 500ms linear;
+			}
+		}
+		.projects {
+			div {
+				&:nth-child(6) {
+					background: $url_3 no-repeat;
+					background-position: center;
+					width: 33%;
+					height: 630px;
+					text-align: center;
+					float: left;
+				}
+				&:nth-child(5) {
+					background: $url_4 no-repeat;
+					background-position: center;
+					width: 33%;
+					height: 630px;
+					text-align: center;
+					float: left;
+				}
+				&:nth-child(4) {
+					background: $url_5 no-repeat;
+					background-position: center;
+					width: 33%;
+					height: 630px;
+					text-align: center;
+					float: left;
+				}
+				&:nth-child(3) {
+					background: $url_6 no-repeat;
+					background-position: center;
+					width: 33%;
+					height: 630px;
+					text-align: center;
+					float: left;
+				}
+				&:nth-child(2) {
+					background: $url_7 no-repeat;
+					background-position: center;
+					width: 33%;
+					height: 630px;
+					text-align: center;
+					float: left;
+				}
+				&:first-child {
+					background: $url_8 no-repeat;
+					background-position: center;
+					width: 33%;
+					height: 630px;
+					text-align: center;
+					float: left;
+				}
+			}
+			> div {
+				ul {
+					list-style-type: none;
+					display: inline-block;
+					padding: 0;
+					li {
+						float: left;
+						margin-left: 5px;
+						color: $white;
+						background-color: $black_40;
+						padding: 5px;
+					}
+				}
+				span {
+					font-family: $font_2;
+					font-size: 1.5rem;
+					color: $white;
+				}
+				p {
+					font-family: $font_2;
+					font-size: 1rem;
+					color: $white;
+				}
+				h1 {
+					color: $white;
+					margin-top: 3rem;
+				}
+				img {
+					position: absolute;
+					width: 3rem;
+					margin-left: -1rem;
+					top: 1rem;
+					cursor: pointer;
+				}
+				section {
+					padding-top: 3rem;
+					position: relative;
+					top: 50%;
+					opacity: 0;
+					height: 50%;
+					//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: background-color 500ms linear;
+				}
+			}
+		}
+		header:nth-child(10) {
+			clear: both;
+		}
+	}
+}
+header {
+	padding: 1%;
+	hr {
+		background-color: $color_buttercup_approx;
+	}
+	h3 {
+		color: $color_charade_approx;
+	}
+}
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	max-width: 100%;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	//Instead of the line below you could use @includebackface-visibility($visibility)
+	backface-visibility: hidden;
+	//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translateX(-50%) translateY(-50%);
+}
+.md-show {
+	visibility: visible;
+	~ .md-overlay {
+		opacity: 1;
+		visibility: visible;
+	}
+	&.md-effect-12 .md-content {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: $color_tamarillo_80_approx;
+	//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s;
+}
+.md-perspective {
+	height: 100%;
+	overflow: hidden;
+	body {
+		height: 100%;
+		overflow: hidden;
+		background: $color_log_cabin_approx;
+		//Instead of the line below you could use @includeperspective($p)
+		perspective: 600px;
+	}
+}
+.container {
+	background: $color_cinnabar_approx;
+	min-height: 100%;
+}
+#modal-1 {
+	color: $white;
+	article {
+		@extend %extend_1;
+	}
+	h2 {
+		margin-top: 0.2em;
+	}
+	div div {
+		width: 40rem;
+		float: left;
+		margin-left: 50px;
+	}
+}
+#modal-4 {
+	color: $white;
+	div {
+		div {
+			width: 50rem;
+			float: left;
+			margin-left: 50px;
+		}
+		a {
+			color: $white;
+		}
+	}
+	article {
+		@extend %extend_1;
+	}
+}
+#modal-2 {
+	top: 45%;
+	div {
+		div {
+			width: 40rem;
+			float: left;
+			margin-left: 50px;
+			margin-top: 50px;
+		}
+		a {
+			color: $black;
+		}
+	}
+	article {
+		float: left;
+		width: 500px;
+		text-align: justify;
+	}
+	h2 {
+		margin-top: 0.2em;
+	}
+}
+#modal-3 {
+	top: 45%;
+	div {
+		div {
+			width: 40rem;
+			float: left;
+			margin-left: 50px;
+			margin-top: 50px;
+		}
+		h2 {
+			color: $white;
+		}
+		p {
+			color: $white;
+		}
+		a {
+			color: $white;
+			top: 10rem;
+			left: 10rem;
+			position: relative;
+			left: 40rem;
+		}
+	}
+	article {
+		float: left;
+		width: 500px;
+		text-align: justify;
+		color: $white;
+	}
+	h3 {
+		margin-top: 0.2em;
+	}
+}
+@media(max-width: 1280px) {
+	html {
+		font-size: 80%;
+	}
+	#modal-2 div div {
+		width: 35rem;
+	}
+	#modal-3 div div {
+		width: 35rem;
+	}
+	#modal-1 div div {
+		width: 35rem;
+	}
+	.md-content p {
+		font-size: 1.2rem;
+		font-size: 1.2rem;
+		font-size: 1.2rem;
+	}
+	main > section:last-child li {
+		margin-left: 2rem;
+	}
+}
+@media(max-width: 1366px) {
+	html {
+		font-size: 80%;
+	}
+	#modal-2 div div {
+		width: 35rem;
+	}
+	#modal-3 div div {
+		width: 35rem;
+	}
+	#modal-1 div div {
+		width: 35rem;
+	}
+	main > section:last-child li {
+		margin-left: 2rem;
+	}
+}
+@media(max-width: 1024px) {
+	#modal-2 div div,#modal-3 div div,#modal-1 div div {
+		width: 30rem;
+		margin: 0;
+	}
+	#modal-3 div a {
+		left: 40rem;
+	}
+	main > section:last-child li {
+		margin-left: 2rem;
+	}
+}
+@media(max-width: 800px) {
+	#modal-2 {
+		top: 55%;
+		div {
+			div {
+				width: 25rem;
+				margin: 0;
+			}
+			h2 {
+				margin: 0;
+			}
+		}
+		article {
+			margin-top: 1rem;
+		}
+	}
+	#modal-3 {
+		top: 55%;
+		div {
+			div {
+				width: 25rem;
+				margin: 0;
+			}
+			a {
+				left: 35rem;
+			}
+			h2 {
+				margin: 0;
+			}
+		}
+		article {
+			margin-top: 1rem;
+		}
+	}
+	#modal-1 {
+		top: 55%;
+		div {
+			div {
+				width: 20rem;
+				margin: 0;
+			}
+			h2 {
+				margin: 0;
+			}
+		}
+		article {
+			margin-top: 1rem;
+		}
+	}
+	main > section {
+		&:last-child li {
+			margin-left: 2rem;
+		}
+		&:nth-child(5) div {
+			&:first-child {
+				width: 96%;
+				float: none;
+			}
+			&:nth-child(3) {
+				width: 96%;
+				float: none;
+			}
+			&:nth-child(2) {
+				width: 96%;
+				float: none;
+			}
+			&:nth-child(4) {
+				width: 96%;
+				float: none;
+			}
+			&:nth-child(5) {
+				width: 96%;
+				float: none;
+			}
+			&:nth-child(6) {
+				width: 96%;
+				float: none;
+			}
+		}
+	}
+}
+.md-effect-12 .md-content {
+	//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: scale(0.8);
+	opacity: 0;
+	//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s;
+	background: transparent;
+	h1 {
+		background: transparent;
+	}
+}
+#modal-4.md-show.md-effect-12 ~ .md-overlay {
+	background: $color_tuna_approx;
+}
+#modal-1.md-show.md-effect-12 ~ .md-overlay {
+	background: $color_tuna_approx;
+}
+#modal-2.md-show.md-effect-12 ~ .md-overlay {
+	background: $color_catskill_white_approx;
+}
+#modal-3.md-show.md-effect-12 ~ .md-overlay {
+	background: $color_flamingo_approx;
+}
+.md-content .md-close {
+	cursor: pointer;
+	width: 30px;
+}
