@@ -46,16 +46,21 @@ main {
     background: url(../img/back.jpg) no-repeat center fixed;
     background-size: cover; }
     main > section:first-child p {
-      margin-top: 20%; }
+      margin-top: 20%;
+      line-height: 1.6; }
+    main > section:first-child a {
+      color: white;
+      text-decoration: underline; }
     main > section:first-child > div {
       position: relative;
       text-align: center;
       color: #fff;
       font-size: 1rem;
       font-family: "Montserrat", sans-serif;
-      width: 20rem;
+      width: 22rem;
       margin: 0 auto;
       top: 30%;
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
   main > section:nth-child(3) {
     height: 650px;
@@ -71,6 +76,7 @@ main {
       right: 10%;
       top: 0;
       top: 50%;
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
     main > section:nth-child(3) > div {
       float: left;
@@ -229,6 +235,7 @@ header {
   z-index: 2000;
   visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
 
 .md-show {
@@ -237,6 +244,7 @@ header {
     opacity: 1;
     visibility: visible; }
   .md-show.md-effect-12 .md-content {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1; }
 
@@ -486,6 +494,7 @@ header {
     width: 100%;
     float: none; } }
 .md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
   transform: scale(0.8);
   opacity: 0;
   transition: all 0.3s;
