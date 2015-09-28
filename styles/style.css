@@ -1,4 +1,4 @@
-#modal-1 article, #modal-4 article {
+#modal-1 article {
   float: left;
   width: 500px;
   text-align: justify; }
@@ -55,7 +55,7 @@ main {
       font-family: "Montserrat", sans-serif;
       width: 20rem;
       margin: 0 auto;
-      top: 50%;
+      top: 30%;
       transform: translateY(-50%); }
   main > section:nth-child(3) {
     height: 650px;
@@ -118,42 +118,49 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
     transition: background-color 500ms linear; }
-  main > .projects div:nth-child(6) {
+  main > .projects .twiby {
     background: url(../img/twiby.jpg) no-repeat;
     background-position: center;
     width: 33%;
     height: 630px;
     text-align: center;
     float: left; }
-  main > .projects div:nth-child(5) {
+  main > .projects .eurosport {
+    background: url(../img/eurosport.jpg) no-repeat;
+    background-position: center;
+    width: 33%;
+    height: 630px;
+    text-align: center;
+    float: left; }
+  main > .projects .placetoubib {
     background: url(../img/theplacetoubib.jpg) no-repeat;
     background-position: center;
     width: 33%;
     height: 630px;
     text-align: center;
     float: left; }
-  main > .projects div:nth-child(4) {
+  main > .projects .menou {
     background: url(../img/augustinportfolio.jpg) no-repeat;
     background-position: center;
     width: 33%;
     height: 630px;
     text-align: center;
     float: left; }
-  main > .projects div:nth-child(3) {
+  main > .projects .parislack {
     background: url(../img/parislack.jpg) no-repeat;
     background-position: center;
     width: 33%;
     height: 630px;
     text-align: center;
     float: left; }
-  main > .projects div:nth-child(2) {
+  main > .projects .bubble {
     background: url(../img/bubble.jpg) no-repeat;
     background-position: center;
     width: 33%;
     height: 630px;
     text-align: center;
     float: left; }
-  main > .projects div:first-child {
+  main > .projects .metro {
     background: url(../img/parismetro.jpg) no-repeat;
     background-position: center;
     width: 33%;
@@ -196,6 +203,13 @@ main {
     transition: background-color 500ms linear; }
   main > header:nth-child(10) {
     clear: both; }
+
+.contact {
+  width: 33%;
+  height: 630px;
+  text-align: center;
+  float: left;
+  padding-top: 10%; }
 
 header {
   padding: 1%; }
@@ -264,11 +278,28 @@ header {
 #modal-4 {
   color: #fff; }
   #modal-4 div div {
-    width: 50rem;
+    width: 50%;
     float: left;
     margin-left: 50px; }
   #modal-4 div a {
     color: #fff; }
+  #modal-4 article {
+    float: left;
+    width: 40%;
+    text-align: justify; }
+
+#modal-5 {
+  color: #fff; }
+  #modal-5 div div {
+    width: 50%;
+    float: left;
+    margin-left: 50px; }
+  #modal-5 div a {
+    color: #fff; }
+  #modal-5 article {
+    float: left;
+    width: 40%;
+    text-align: justify; }
 
 #modal-2 {
   top: 45%; }
@@ -299,10 +330,7 @@ header {
     color: #fff; }
   #modal-3 div a {
     color: #fff;
-    top: 10rem;
-    left: 10rem;
-    position: relative;
-    left: 40rem; }
+    position: relative; }
   #modal-3 article {
     float: left;
     width: 500px;
@@ -355,7 +383,23 @@ header {
     left: 40rem; }
 
   main > section:last-child li {
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+
+  #modal-5 div div {
+    width: 100%;
+    margin-left: 0; }
+  #modal-5 article {
+    float: left;
+    width: 100%;
+    text-align: justify; }
+
+  #modal-4 div div {
+    width: 100%;
+    margin-left: 0; }
+  #modal-4 article {
+    float: left;
+    width: 100%;
+    text-align: justify; } }
 @media (max-width: 800px) {
   #modal-2 {
     top: 55%; }
@@ -366,6 +410,13 @@ header {
       margin: 0; }
     #modal-2 article {
       margin-top: 1rem; }
+
+  #modal-5 div div {
+    display: none; }
+  #modal-5 article {
+    float: left;
+    width: 100%;
+    text-align: justify; }
 
   #modal-3 {
     top: 55%; }
@@ -389,25 +440,50 @@ header {
     #modal-1 article {
       margin-top: 1rem; }
 
+  .contact {
+    width: 100%;
+    height: 360px;
+    clear: left; }
+
+  main > section:first-child > div {
+    top: 10%;
+    transform: initial; }
+
+  main > section:first-child {
+    height: 380px;
+    background: #2d3141; }
+
+  main > section:nth-child(3) > div {
+    display: none; }
+
+  main > section:nth-child(3) > p {
+    width: 80%; }
+
+  main > section:nth-child(3) {
+    height: 260px; }
+
   main > section:last-child li {
     margin-left: 2rem; }
   main > section:nth-child(5) div:first-child {
-    width: 96%;
+    width: 100%;
     float: none; }
   main > section:nth-child(5) div:nth-child(3) {
-    width: 96%;
+    width: 100%;
     float: none; }
   main > section:nth-child(5) div:nth-child(2) {
-    width: 96%;
+    width: 100%;
     float: none; }
   main > section:nth-child(5) div:nth-child(4) {
-    width: 96%;
+    width: 100%;
     float: none; }
   main > section:nth-child(5) div:nth-child(5) {
-    width: 96%;
+    width: 100%;
     float: none; }
   main > section:nth-child(5) div:nth-child(6) {
-    width: 96%;
+    width: 100%;
+    float: none; }
+  main > section:nth-child(5) div:nth-child(7) {
+    width: 100%;
     float: none; } }
 .md-effect-12 .md-content {
   transform: scale(0.8);
@@ -428,6 +504,9 @@ header {
 
 #modal-3.md-show.md-effect-12 ~ .md-overlay {
   background: #ed5534; }
+
+#modal-5.md-show.md-effect-12 ~ .md-overlay {
+  background: #2d3141; }
 
 .md-content .md-close {
   cursor: pointer;

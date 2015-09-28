@@ -28,6 +28,8 @@ $url_5: url(../img/augustinportfolio.jpg);
 $url_6: url(../img/parislack.jpg);
 $url_7: url(../img/bubble.jpg);
 $url_8: url(../img/parismetro.jpg);
+$url_9: url(../img/eurosport.jpg);
+$url_10: url(../img/eurosport-screenshot.jpg);
 
 //@extend-elements
 //original selectors
@@ -94,7 +96,7 @@ main {
 					font-family: $font_0, $font_1;
 					width: 20rem;
 					margin: 0 auto;
-					top: 50%;
+					top: 30%;
 					//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 					transform: translateY(-50%);
 				}
@@ -183,55 +185,61 @@ main {
 			}
 		}
 		.projects {
-			div {
-				&:nth-child(6) {
-					background: $url_3 no-repeat;
-					background-position: center;
-					width: 33%;
-					height: 630px;
-					text-align: center;
-					float: left;
-				}
-				&:nth-child(5) {
-					background: $url_4 no-repeat;
-					background-position: center;
-					width: 33%;
-					height: 630px;
-					text-align: center;
-					float: left;
-				}
-				&:nth-child(4) {
-					background: $url_5 no-repeat;
-					background-position: center;
-					width: 33%;
-					height: 630px;
-					text-align: center;
-					float: left;
-				}
-				&:nth-child(3) {
-					background: $url_6 no-repeat;
-					background-position: center;
-					width: 33%;
-					height: 630px;
-					text-align: center;
-					float: left;
-				}
-				&:nth-child(2) {
-					background: $url_7 no-repeat;
-					background-position: center;
-					width: 33%;
-					height: 630px;
-					text-align: center;
-					float: left;
-				}
-				&:first-child {
-					background: $url_8 no-repeat;
-					background-position: center;
-					width: 33%;
-					height: 630px;
-					text-align: center;
-					float: left;
-				}
+			.twiby {
+				background: $url_3 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
+			}
+			.eurosport {
+				background: $url_9 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
+			}
+			.placetoubib {
+				background: $url_4 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
+			}
+			.menou {
+				background: $url_5 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
+			}
+			.parislack {
+				background: $url_6 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
+			}
+			.bubble {
+				background: $url_7 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
+			}
+			.metro {
+				background: $url_8 no-repeat;
+				background-position: center;
+				width: 33%;
+				height: 630px;
+				text-align: center;
+				float: left;
 			}
 			> div {
 				ul {
@@ -282,6 +290,13 @@ main {
 			clear: both;
 		}
 	}
+}
+.contact{
+	width: 33%;
+  height: 630px;
+  text-align: center;
+  float: left;
+  padding-top: 10%;
 }
 header {
 	padding: 1%;
@@ -366,7 +381,7 @@ header {
 	color: $white;
 	div {
 		div {
-			width: 50rem;
+			width: 50%;
 			float: left;
 			margin-left: 50px;
 		}
@@ -375,7 +390,27 @@ header {
 		}
 	}
 	article {
-		@extend %extend_1;
+		float: left;
+		width: 40%;
+		text-align: justify;
+	}
+}
+#modal-5 {
+	color: $white;
+	div {
+		div {
+			width: 50%;
+			float: left;
+			margin-left: 50px;
+		}
+		a {
+			color: $white;
+		}
+	}
+	article {
+		float: left;
+		width: 40%;
+		text-align: justify;
 	}
 }
 #modal-2 {
@@ -417,8 +452,6 @@ header {
 		}
 		a {
 			color: $white;
-			top: 0;
-			left: 0;
 			position: relative;
 		}
 	}
@@ -477,10 +510,36 @@ header {
 		margin: 0;
 	}
 	#modal-3 div a {
-		left: 0;
+		left: 40rem;
 	}
 	main > section:last-child li {
 		margin-left: 2rem;
+	}
+	#modal-5 {
+		div {
+			div {
+				width: 100%;
+				margin-left: 0
+			}
+		}
+		article {
+			float: left;
+			width: 100%;
+			text-align: justify;
+		}
+	}
+	#modal-4 {
+		div {
+			div {
+				width: 100%;
+				margin-left: 0
+			}
+		}
+		article {
+			float: left;
+			width: 100%;
+			text-align: justify;
+		}
 	}
 }
 @media(max-width: 800px) {
@@ -497,6 +556,18 @@ header {
 		}
 		article {
 			margin-top: 1rem;
+		}
+	}
+	#modal-5 {
+		div {
+			div {
+				display: none;
+			}
+		}
+		article {
+			float: left;
+			width: 100%;
+			text-align: justify;
 		}
 	}
 	#modal-3 {
@@ -532,33 +603,59 @@ header {
 			margin-top: 1rem;
 		}
 	}
+	.contact {
+    width: 100%;
+    height: 360px;
+    clear: left;
+	}
+	main > section:first-child > div{
+		top: 10%;
+		transform: initial;
+	}
+	main > section:first-child{
+		height: 380px;
+		background: #2d3141
+	}
+	main > section:nth-child(3) > div{
+		display: none;
+	}
+	main > section:nth-child(3) > p{
+		width: 80%
+	}
+	main > section:nth-child(3){
+		height: 260px
+	}
 	main > section {
 		&:last-child li {
 			margin-left: 2rem;
 		}
 		&:nth-child(5) div {
 			&:first-child {
-				width: 96%;
+				width: 100%;
 				float: none;
 			}
 			&:nth-child(3) {
-				width: 96%;
+				width: 100%;
 				float: none;
 			}
 			&:nth-child(2) {
-				width: 96%;
+				width: 100%;
 				float: none;
 			}
 			&:nth-child(4) {
-				width: 96%;
+				width: 100%;
 				float: none;
 			}
 			&:nth-child(5) {
-				width: 96%;
+				width: 100%;
 				float: none;
 			}
 			&:nth-child(6) {
-				width: 96%;
+				width: 100%;
+				float: none;
+			}
+			&:nth-child(7) {
+				width: 100%;
 				float: none;
 			}
 		}
@@ -586,6 +683,9 @@ header {
 }
 #modal-3.md-show.md-effect-12 ~ .md-overlay {
 	background: $color_flamingo_approx;
+}
+#modal-5.md-show.md-effect-12 ~ .md-overlay {
+	background: $color_tuna_approx;
 }
 .md-content .md-close {
 	cursor: pointer;

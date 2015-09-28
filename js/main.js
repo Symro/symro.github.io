@@ -37,6 +37,12 @@ $(document).ready(function() {
 	    opacity: 1,
 	  }, 500 );
 	});
+	$('main > section:nth-child(5) div:nth-child(7)').mouseenter(function(e){
+		$(this).toggleClass('active');
+		$(this).children('section').animate({
+	    opacity: 1,
+	  }, 500 );
+	});
 	$('main > section:nth-child(5) div:first-child').mouseleave(function(e){
 		$(this).toggleClass('active');
 		$(this).children('section').animate({
@@ -68,6 +74,12 @@ $(document).ready(function() {
 	  }, 500 );
 	});
 	$('main > section:nth-child(5) div:nth-child(6)').mouseleave(function(e){
+		$(this).toggleClass('active');
+		$(this).children('section').animate({
+	    opacity: 0,
+	  }, 500 );
+	});
+	$('main > section:nth-child(5) div:nth-child(7)').mouseleave(function(e){
 		$(this).toggleClass('active');
 		$(this).children('section').animate({
 	    opacity: 0,
